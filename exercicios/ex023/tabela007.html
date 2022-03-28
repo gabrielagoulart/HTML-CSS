@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela Completa</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.603);
+            color: white;
+        }
+
+        .nomes {
+            background-color: rgba(0, 0, 0, 0.603);
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <table>
+
+        <caption>Gastos e Lucros de funcionários</caption>
+
+        <thead>
+            <tr>
+
+                <th rowspan="2" scope="col">Funcionário</th>
+                <th rowspan="2" scope="col">Semestre</th>
+                <th colspan="2" scope="colgroup">Gastos</th>
+                <th colspan="2" scope="colgroup">Lucros</th>
+
+            </tr>
+
+            <tr>
+                <th scope="col">Liq</th>
+                <th scope="col">Brut</th>
+                <th scope="col">Liq</th>
+                <th scope="col">Brut</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td rowspan="2" class="nomes">João</td>
+                <td>1</td>
+                <td>R$ 10,00</td>
+                <td>R$ 15,00</td>
+                <td>R$ 70,00</td>
+                <td>R$ 85,00</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>R$ 20,00</td>
+                <td>R$ 20,00</td>
+                <td>R$ 150,00</td>
+                <td>R$ 170,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="nomes">Maria</td>
+                <td>1</td>
+                <td>R$ 10,00</td>
+                <td>R$ 15,00</td>
+                <td>R$ 10,00</td>
+                <td>R$ 25,00</td>
+
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>R$ 15,00</td>
+                <td>R$ 20,00</td>
+                <td>R$ 120,00</td>
+                <td>R$ 140,00</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>
