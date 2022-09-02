@@ -6,6 +6,10 @@ body, ul, li p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin-bottom: 100px;
+}
+
 h1 {
     text-align: center;
     margin-top: 100px;
@@ -55,4 +59,43 @@ a {
 .flex > div {
     flex: 1 1 200px;
     margin: 10px;
+}
+
+/*=======CSS GRID 1========*/
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.grid1 > div:nth-child(n + 4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.grid1 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .grid1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid1 > div:nth-child(n + 4) {
+        display: block;
+    }
+
+    .grid1 > div.anuncio {
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
 }
