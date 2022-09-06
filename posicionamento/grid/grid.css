@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: yellow;
+    height: 100px;
+
+    grid-column-start: 1; /*começa na linha 1*/
+    grid-column-end: 3; /*termina na linha 3*/
+}
+
+main {
+    background: blue;
+    height: 100px;
+}
+
+aside {
+    background: red;
+    height: 100px;
+}
+
+footer {
+    background: green;
+    height: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+}
+
