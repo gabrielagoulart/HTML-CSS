@@ -8,25 +8,31 @@ html, body {
 
 header {
     background: yellow;
-    height: 100px;
 
     grid-column-start: 1; /*começa na linha 1*/
     grid-column-end: 3; /*termina na linha 3*/
+    /*grid-column: 1 / 3; = atalho*/
 }
 
 main {
     background: blue;
-    height: 100px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 aside {
     background: red;
-    height: 100px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 footer {
     background: green;
-    height: 100px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .container {
