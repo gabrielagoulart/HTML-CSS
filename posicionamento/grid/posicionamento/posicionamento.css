@@ -18,8 +18,12 @@ html, body {
     grid-template-rows: 1fr 1fr 1fr;
 
     grid-gap: 5px;
+
+    justify-items: center;
 }
 
 .container > div {
     background-color: #7159c1;
+    width: 50%;
+    height: 50%;
 }
